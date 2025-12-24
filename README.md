@@ -1,29 +1,140 @@
-# Appointment-Management-and-Scheduling-System
-Designed a full stack Appointment Scheduling System featuring User Authentication (registration, login), appointment booking, calendar integration, appointment cancellation, and doctor search. MERN stack, utilizing JWT for security, bcryptjs for password hashing, and mongoose for database management.
+# Appointment Scheduling System
 
-## Login Page
-![Login Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/login.png)
+A full stack appointment scheduling application designed for managing interactions between patients and doctors. The system supports registration, authentication, doctor discovery, calendar-based slot booking, and appointment management through a clean REST API and a React-based frontend.
 
-## Registration Page
-![Registration Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/registration.png)
+## Overview
 
-## Doctor Profile Page
-![Doctor Profile Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/doctor_profile_page.png)
+This project simulates a real-world clinic or hospital appointment workflow. Patients can register, search for doctors, view availability through a calendar interface, and book appointment slots. Doctors can manage their profiles and view scheduled appointments. The backend enforces authentication, validation, and scheduling rules, while the frontend provides a simple and intuitive user experience.
 
-## Patient Profile Page
-![Patient Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/patient_profile_page.png)
+The application is structured to clearly separate frontend, backend, and database concerns, making it suitable for learning and demonstration of full stack development practices.
 
-## Patient Landing Page
-![Patient Landing Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/patient_landing_page.png)
+## Features
 
-## Home Page
-![Home Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/home.png)
+### Patient
 
-## Search Page
-![Search Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/search.png)
+* Patient registration and login
+* Search and view available doctors
+* Calendar-based appointment slot booking
+* View booked appointments
 
-## Slot Booking Page
-![Slot Booking Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/slot_booking.png)
+### Doctor
 
-## Calendar Page
-![Calendar Page](https://raw.github.com/Uday2902/appointment-scheduling-system/main/Screenshots/calendar.png)
+* Doctor registration and login
+* Doctor profile management
+* View upcoming appointments
+
+### System
+
+* Role-based authentication using JWT
+* RESTful API design
+* Appointment and slot validation
+* Centralized error handling
+
+## Tech Stack
+
+### Frontend
+
+* React
+* JavaScript, HTML, CSS
+* Axios for API communication
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB with Mongoose
+* JSON Web Tokens for authentication
+
+## Project Structure
+
+```
+appointment-scheduling-system-main/
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middlewares/
+│   ├── errors/
+│   ├── db/
+│   └── app.js
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── App.js
+│       ├── index.js
+│       └── styles
+│
+├── Screenshots/
+│   ├── calendar.png
+│   ├── search.png
+│   └── slot_booking.png
+│
+└── README.md
+```
+
+## Setup Instructions
+
+### Prerequisites
+
+* Node.js
+* MongoDB
+
+### Backend Setup
+
+1. Navigate to the backend directory
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+3. Configure environment variables
+
+   ```
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   ```
+4. Start the backend server
+
+   ```
+   npm start
+   ```
+
+### Frontend Setup
+
+1. Navigate to the frontend directory
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+3. Start the frontend application
+
+   ```
+   npm start
+   ```
+
+## Screenshots
+
+UI screenshots demonstrating registration, doctor search, calendar booking, and profile pages are available in the `Screenshots` folder.
+
+## Learning Outcomes
+
+* Designing REST APIs with Express
+* Structuring MongoDB schemas with Mongoose
+* Implementing authentication and middleware
+* Managing full stack data flow
+* Organizing scalable project architecture
+
+## Future Enhancements
+
+* Appointment reminders and notifications
+* Admin dashboard for system oversight
+* Improved calendar availability controls
+* Enhanced UI and accessibility
+
+## Author
+
+Developed as a full stack appointment scheduling system for learning and demonstration purposes.
+
